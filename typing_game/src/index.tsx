@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import { Hello } from "./components/Hello";
+import Hello from "./components/StatefulHello";
 
 ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById("root")
+  <Hello name="TypeScript" enthusiasmLevel={10} />,
+  document.getElementById("root") as HTMLElement
 );
 
 // If you want your app to work offline and load faster, you can change
